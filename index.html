@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>BIRTHDAY CALCULATOR</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"></a>
+    </div>
+  </div>
+  <div class="jumbotron text-center">
+    <h1><class="akan-heading">AKAN <span class="heading-name">NAMES</span></h1>
+  </div>
+  <p>This page collects your date of birth data and based on your gender outputs your Akan Name accordingly, </p>
+  <p>Here are some Akan Names and the days they represent.</p>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Male</h3>
+        <ul>
+          <li>Sunday: Kwasi</li>
+          <li>Monday: Kwadwo</li>
+          <li>Tuesday: Kwabena</li>
+          <li>Wednesday: Kwaku</li>
+          <li>Thursday: Yaw</li>
+          <li>Friday: Kofi</li>
+          <li>Saturday: Kwame</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h4>Female</h4>
+        <ul>
+          <li>Sunday: Akosua</li>
+          <li>Monday: Adwoa</li>
+          <li>Tuesday: Abenaa</li>
+          <li>Wednesday: Akosua</li>
+          <li>Thursday: Yaa</li>
+          <li>Friday: Afua</li>
+          <li>Saturday: Ama</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4 mt30 akan-form">
+      <h5>Please enter your Birthdate here:</h5>
+      <div class="add-stylist-form">
+        <form>
+          <div class="form-group mb15">
+            <label class="label">Birthday</label>
+            <div class="input-group mb15">
+              <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+              <input type="date" placeholder="mm/dd/yyyy" name="dob" class="date" required autocomplete="off"/>
+            </div>
+          </div>
+          <div class="form-group mb15">
+            <label>Gender</label>
+            <div class="rdio rdio-default fs11">
+              <div class="genders">
+                <input type="radio" name="gender" value="male" required> Male
+                <div class="rdio rdio-default fs11">
+                  <input type="radio" name="gender"  value="female" required> Female
+                </div>
+              </div>
+            </div>
+            <button type="submit" onclick="getAkanName()">Get Akan Name</button>
+            <button type="reset" onclick="clearAkanMessage()">Cancel</button>
+            <p><span class="day-name"></span></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
